@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="androidexample.com.deadlike.InputActivity"
+
+    android:padding="16dp"
+    android:background="@color/background">
+
+
+    <EditText
+        android:id="@+id/deadlineName_editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Deadline's name" />
+
+
+    <EditText
+        android:id="@+id/subjectName_editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Subject's name" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:singleLine="false"
+        android:text="Description (optional)"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:layout_marginLeft="3dp" />
+
+
+    <EditText
+        android:id="@+id/description_EditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginTop="5dp"
+        android:layout_weight="1"
+        android:inputType="textMultiLine"
+        android:lines="8"
+        android:hint=""
+        android:gravity="top|left" />
+
+    <include layout="@layout/date_layout"
+        android:id="@+id/dateLayout_input"/>
+
+    <include
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/remindLayout_input"
+        layout="@layout/remind_before_layout" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/submitInput_Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:onClick="submit"
+            android:text="Submit" />
+    </RelativeLayout>
+
+
+</LinearLayout>

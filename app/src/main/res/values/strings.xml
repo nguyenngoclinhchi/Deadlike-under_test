@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">DeadLike</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_input">Add Deadline</string>
+    <string name="title_activity_output">Deadline List</string>
+
+</resources>
